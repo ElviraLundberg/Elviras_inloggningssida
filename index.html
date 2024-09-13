@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"><!--Länk till min css-->
+    <script src="script.js" defer></script><!--Länk till min script.js-->
+</head>
+<body>
+    <!-- Här har jag skapat min inloggningsvy
+     Skapar ett id för varje sida för att kunna skapa mina funktioner i script.js-->
+        <div id = "loginsida">
+            <h1>Elviras inloggningssida</h1>
+            <!-- Skapar textrutor för att användaren ska ange namn och lösenord och ger även dom ett id-->
+            <input type = "text" id="textinput" placeholder="namn">
+            <input type = "password" id="loseninput" placeholder="lösenord">
+            <!--Loginknapp-->
+            <button onclick="login()">Logga in</button>
+        </div>
+    <!-- Här skapar jag min välkomstvy-->
+        <div id = "valkomstsida">
+            <!--Välkomstmeddelande för användaren-->
+            <h1> Välkommen!</h1>
+            <p>Inloggning lyckades.</p>
+            <!--En bild till välkomstsidan som jag lagt in via länk & i samma mapp localt på datorn-->
+            <img src="819a5c0e73623b6219ef2727f8a76c40.jpg" alt="välkomstvy--">
+            <!--logoutknapp-->
+            <button onclick="logout()">Logga ut</button>
+
+        </div>
+    <!--Här skapar jag min vy för felmeddelandet, om användaren anger fel lösenord-->
+        <div id = "felmeddelande">
+            <!--felmeddelande-->
+            <h1>Fel!</h1>
+            <p>Du har angett fel användarnamn eller lösenord....</p>
+            <!--knapp för att komma till start igen-->
+            <button onclick="goBack()">Klicka här för att komma till start</button>
+        </div>
+        
+</body>
+</html>
